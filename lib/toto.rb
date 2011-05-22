@@ -37,7 +37,7 @@ module Toto
 
     def markdown text
       if (options = @config[:markdown])
-        Markdown.new(text.to_s.strip, *(options.eql?(true) ? [] : options)).to_html
+        Markdown.new(text.to_s.strip).to_html
       else
         text.strip
       end
