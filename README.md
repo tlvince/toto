@@ -34,7 +34,7 @@ how it works
 
 - content is entirely managed through **git**; you get full fledged version control for free.
 - articles are stored as _.txt_ files, with embeded metadata (in yaml format).
-- articles are processed through a markdown converter (rdiscount) by default.
+- articles are processed through a markdown converter (maruku) by default.
 - templating is done through **ERB**.
 - toto is built right on top of **Rack**.
 - toto was built to take advantage of _HTTP caching_.
