@@ -224,7 +224,7 @@ module Toto
 
     def load
       data = if @obj.is_a? String
-        meta, self[:body] = File.read(@obj).split(/\n---\n/, 2)
+        meta, self[:body] = File.read(@obj).split(/\n\n/, 2)
 
         # use the date from the filename, or else toto won't find the article
         @obj =~ /\/(\d{4}-\d{2}-\d{2})[^\/]*$/
