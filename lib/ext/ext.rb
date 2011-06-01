@@ -23,13 +23,13 @@ class Fixnum
     # 3 => 3rd
     # ...
     case self % 100
-      when 11..13; "#{self}th"
+      when 11..13; "th"
     else
       case self % 10
-        when 1; "#{self}st"
-        when 2; "#{self}nd"
-        when 3; "#{self}rd"
-        else    "#{self}th"
+        when 1; "st"
+        when 2; "nd"
+        when 3; "rd"
+        else    "th"
       end
     end
   end
