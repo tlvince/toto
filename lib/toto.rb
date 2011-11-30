@@ -402,6 +402,10 @@ module Toto
     def self.slugize obj
       obj.to_s.strip.slugize
     end
+
+    def title
+      @title.capitalize
+    end
   end
 
   class TagCloud < Hash
