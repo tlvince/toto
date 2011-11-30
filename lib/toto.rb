@@ -253,7 +253,7 @@ module Toto
 
       self.taint
       self.update data
-      self[:tags] = self[:tags].to_s.split(',') unless self[:tags].is_a? Array
+      self[:tags] = self[:tags].to_s.split(' ') unless self[:tags].is_a? Array
       self[:date] = Date.parse(self[:date].gsub('/', '-')) rescue Date.today
 
       self[:tags].map!{|str| Tag.new(str, @config)}
